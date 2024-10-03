@@ -3,22 +3,30 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
+import pandas as pd
+
 def load_data():
+    dataset_path = "air_quality_dataset/"
+
     df = pd.concat([
-        pd.read_csv("air_quality_dataset/PRSA_Data_Aotizhongxin_20130301-20170228.csv"),
-        pd.read_csv("air_quality_dataset/PRSA_Data_Changping_20130301-20170228.csv"),
-        pd.read_csv("air_quality_dataset/PRSA_Data_Dingling_20130301-20170228.csv"),
-        pd.read_csv("air_quality_dataset/PRSA_Data_Dongsi_20130301-20170228.csv"),
-        pd.read_csv("air_quality_dataset/PRSA_Data_Guanyuan_20130301-20170228.csv"),
-        pd.read_csv("air_quality_dataset/PRSA_Data_Gucheng_20130301-20170228.csv"),
-        pd.read_csv("air_quality_dataset/PRSA_Data_Huairou_20130301-20170228.csv"),
-        pd.read_csv("air_quality_dataset/PRSA_Data_Nongzhanguan_20130301-20170228.csv"),
-        pd.read_csv("air_quality_dataset/PRSA_Data_Shunyi_20130301-20170228.csv"),
-        pd.read_csv("air_quality_dataset/PRSA_Data_Tiantan_20130301-20170228.csv"),
-        pd.read_csv("air_quality_dataset/PRSA_Data_Wanliu_20130301-20170228.csv"),
-        pd.read_csv("air_quality_dataset/PRSA_Data_Wanshouxigong_20130301-20170228.csv")
+        pd.read_csv(f"{dataset_path}PRSA_Data_Aotizhongxin_20130301-20170228.csv"),
+        pd.read_csv(f"{dataset_path}PRSA_Data_Changping_20130301-20170228.csv"),
+        pd.read_csv(f"{dataset_path}PRSA_Data_Dingling_20130301-20170228.csv"),
+        pd.read_csv(f"{dataset_path}PRSA_Data_Dongsi_20130301-20170228.csv"),
+        pd.read_csv(f"{dataset_path}PRSA_Data_Guanyuan_20130301-20170228.csv"),
+        pd.read_csv(f"{dataset_path}PRSA_Data_Gucheng_20130301-20170228.csv"),
+        pd.read_csv(f"{dataset_path}PRSA_Data_Huairou_20130301-20170228.csv"),
+        pd.read_csv(f"{dataset_path}PRSA_Data_Nongzhanguan_20130301-20170228.csv"),
+        pd.read_csv(f"{dataset_path}PRSA_Data_Shunyi_20130301-20170228.csv"),
+        pd.read_csv(f"{dataset_path}PRSA_Data_Tiantan_20130301-20170228.csv"),
+        pd.read_csv(f"{dataset_path}PRSA_Data_Wanliu_20130301-20170228.csv"),
+        pd.read_csv(f"{dataset_path}PRSA_Data_Wanshouxigong_20130301-20170228.csv")
     ])
+    
     return df
+
+
 
 def analyze_august(df):
     df['month'] = pd.to_datetime(df[['year', 'month', 'day']]).dt.month
