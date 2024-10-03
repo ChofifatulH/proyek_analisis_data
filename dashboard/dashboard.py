@@ -8,18 +8,18 @@ import pandas as pd
 
 def load_data():
     df = pd.concat([
-        pd.read_csv("main_data/PRSA_Data_Aotizhongxin_20130301-20170228.csv"),
-        pd.read_csv("main_data/PRSA_Data_Changping_20130301-20170228.csv"),
-        pd.read_csv("main_data/PRSA_Data_Dingling_20130301-20170228.csv"),
-        pd.read_csv("main_data/PRSA_Data_Dongsi_20130301-20170228.csv"),
-        pd.read_csv("main_data/PRSA_Data_Guanyuan_20130301-20170228.csv"),
-        pd.read_csv("main_data/PRSA_Data_Gucheng_20130301-20170228.csv"),
-        pd.read_csv("main_data/PRSA_Data_Huairou_20130301-20170228.csv"),
-        pd.read_csv("main_data/PRSA_Data_Nongzhanguan_20130301-20170228.csv"),
-        pd.read_csv("main_data/PRSA_Data_Shunyi_20130301-20170228.csv"),
-        pd.read_csv("main_data/PRSA_Data_Tiantan_20130301-20170228.csv"),
-        pd.read_csv("main_data/PRSA_Data_Wanliu_20130301-20170228.csv"),
-        pd.read_csv("main_data/PRSA_Data_Wanshouxigong_20130301-20170228.csv")
+        pd.read_csv("https://raw.githubusercontent.com/ChofifatulH/proyek_analisis_data/refs/heads/main/dashboard/main_data/PRSA_Data_Aotizhongxin_20130301-20170228.csv"),
+        pd.read_csv("https://raw.githubusercontent.com/ChofifatulH/proyek_analisis_data/refs/heads/main/dashboard/main_data/PRSA_Data_Changping_20130301-20170228.csv"),
+        pd.read_csv("https://raw.githubusercontent.com/ChofifatulH/proyek_analisis_data/refs/heads/main/dashboard/main_data/PRSA_Data_Dingling_20130301-20170228.csv"),
+        pd.read_csv("https://raw.githubusercontent.com/ChofifatulH/proyek_analisis_data/refs/heads/main/dashboard/main_data/PRSA_Data_Dongsi_20130301-20170228.csv"),
+        pd.read_csv("https://raw.githubusercontent.com/ChofifatulH/proyek_analisis_data/refs/heads/main/dashboard/main_data/PRSA_Data_Guanyuan_20130301-20170228.csv"),
+        pd.read_csv("https://raw.githubusercontent.com/ChofifatulH/proyek_analisis_data/refs/heads/main/dashboard/main_data/PRSA_Data_Gucheng_20130301-20170228.csv"),
+        pd.read_csv("https://raw.githubusercontent.com/ChofifatulH/proyek_analisis_data/refs/heads/main/dashboard/main_data//PRSA_Data_Huairou_20130301-20170228.csv"),
+        pd.read_csv("https://raw.githubusercontent.com/ChofifatulH/proyek_analisis_data/refs/heads/main/dashboard/main_data/PRSA_Data_Nongzhanguan_20130301-20170228.csv"),
+        pd.read_csv("https://raw.githubusercontent.com/ChofifatulH/proyek_analisis_data/refs/heads/main/dashboard/main_data/PRSA_Data_Shunyi_20130301-20170228.csv"),
+        pd.read_csv("https://raw.githubusercontent.com/ChofifatulH/proyek_analisis_data/refs/heads/main/dashboard/main_data/PRSA_Data_Tiantan_20130301-20170228.csv"),
+        pd.read_csv("https://raw.githubusercontent.com/ChofifatulH/proyek_analisis_data/refs/heads/main/dashboard/main_data/PRSA_Data_Wanliu_20130301-20170228.csv"),
+        pd.read_csv("https://raw.githubusercontent.com/ChofifatulH/proyek_analisis_data/refs/heads/main/dashboard/main_data/PRSA_Data_Wanshouxigong_20130301-20170228.csv")
     ])
     return df
 
