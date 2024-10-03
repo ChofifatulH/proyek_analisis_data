@@ -7,7 +7,7 @@ import seaborn as sns
 import pandas as pd
 
 def load_data():
-    dataset_path = "air_quality_dataset/"
+    dataset_path = "main_datat/"
 
     df = pd.concat([
         pd.read_csv(f"{dataset_path}PRSA_Data_Aotizhongxin_20130301-20170228.csv"),
